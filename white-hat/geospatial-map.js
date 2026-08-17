@@ -7,6 +7,10 @@ viewof selectedNeighborhoodsWhite = Inputs.select(
   }
 )
 
+filteredDataWhite = selectedNeighborhoodsWhite.includes("All") || selectedNeighborhoodsWhite.length === 0
+  ? augmentedHousing
+  : augmentedHousing.filter(d => selectedNeighborhoodsWhite.includes(d["City Analysis Neighborhood"]))
+
 // Map data can be filtered by neighborhood
 vl.layer(
   vl.markGeoshape({ stroke: "black", strokeOpacity: 0.3, fill: "lightblue", fillOpacity: 0.6 })
