@@ -1,3 +1,13 @@
+viewof selectedNeighborhoodsWhite = Inputs.select(
+  ["All", ...directionOrderedNeighborhoods],
+  { 
+    label: "Filter by Neighborhood(s) (select multiple by clicking with control or command):", 
+    multiple: true,
+    value: ["All"]
+  }
+)
+
+// Map data can be filtered by neighborhood
 vl.layer(
   vl.markGeoshape({ stroke: "black", strokeOpacity: 0.3, fill: "lightblue", fillOpacity: 0.6 })
     .data({ values: sfBounds })
