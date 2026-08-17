@@ -11,6 +11,10 @@ viewof selectedNeighborhoodsBlack = Inputs.select(
   }
 )
 
+filteredDataBlack = selectedNeighborhoodsBlack.includes("All") || selectedNeighborhoodsBlack.length === 0
+  ? augmentedHousing
+  : augmentedHousing.filter(d => selectedNeighborhoodsBlack.includes(d["City Analysis Neighborhood"]))
+
 vl.layer(
   vl.markGeoshape({ stroke: "black", strokeOpacity: 0.3, fill: "lightblue", fillOpacity: 0.6 })
     .data({ values: sfBounds })
