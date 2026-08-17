@@ -1,2 +1,3 @@
 # sf-affordable-housing-white-hat-black-hat-viz
-White hat vs black hat data visualization project
+
+Inspired by the political weaponization of affordable housing on both the NIMBY (not in my backyard) and YIMBY (yes in my backyard) sides, I created this project to show how the same data can be manipulated to mislead the viewer. By utilizing Vega-Lite and data from San Francisco's Open Data Portal, this project consists of [four interactive visualizations](https://observablehq.com/d/178c776e03a3568e) in an Observable Notebook. In my two white hat visualizations I display the data in a clear and accurate way. In my two black hat visualizations I use deceptive techniques to try to paint a particular narrative.
