@@ -2,7 +2,7 @@
 
 Inspired by the political weaponization of affordable housing on both the NIMBY (not in my backyard) and YIMBY (yes in my backyard) sides, I created this project to show how the same data can be manipulated to mislead the viewer. By utilizing Vega-Lite and data from San Francisco's Open Data Portal, this project consists of [four interactive visualizations](https://observablehq.com/d/178c776e03a3568e) in an Observable Notebook. In my two white hat visualizations I display the data in a clear and accurate way. In my two black hat visualizations I use deceptive techniques to try to paint a particular narrative.
 
-Black Hat Techniques Utilized
+## Black Hat Techniques Utilized
 | Visualization | Technique | Rationale |
 | --- | --- | --- |
 | Stacked Bar Chart | Unit axis shifted from 0 - 1800 to 50 - 1600 | Slightly exaggerates neighborhood differences, cuts off top and bottom such that many neighborhoods seem like they are building no housing rather than some but not much |
@@ -14,3 +14,9 @@ Black Hat Techniques Utilized
 | Geospatial Map | "Regions" renamed to "Zone Designations", "Affordable Housing" renamed to "Housing Density Burden", "Project Units" renamed to "Alleviated Units", and "Total Neighborhood Units" renamed to "Total Contribution by Neighborhood" | Heightened language signals crisis  |
 | Geospatial Map | Region colors assigned an increasing opacity scale of red | Indicates more danger the greater the opacity of red |
 | Geospatial Map | Map shifted southward and eastward | Emphasizes the "problem zone" and cuts off part of Treasure Island implying that it isn't important |
+
+## Acknowledgements
+Data from this project was collected from a 05/18/2025 snapshot of the Mayor's Office of Housing and Community Development Affordable Housing Pipeline from DataSF (San Francisco's Open Data Portal). It also utilizes the Map of Supervisor Districts (2022) from DataSF. This project was submitted as a final project for DS4200 Information Visualization at Northeastern University. A more in-depth write-up can be found [here](https://github.com/LeeDylan21/sf-affordable-housing-white-hat-black-hat-viz/blob/main/write-up.pdf).
+
+## Wrap-up
+While the sharing of information can never be unbiased, it is still important to avoid intentionally misleading viewers and to educate others about how to identify when visualizations are deceptive. This project underscores just how radically different data can be presented when someone has a hidden agenda.
